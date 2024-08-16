@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Homepage</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Cabeçalho -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo" style="height: 40px;"> <!-- Ajuste o caminho e a altura conforme necessário -->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Empresa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Informações</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Seção Sobre a Empresa -->
+    <section class="sobre-empresa my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>SW Máquinas</h2>
+                    <p>Desde 2006, nosso objetivo é construir e desenvolver máquinas com qualidade, segurança e com o melhor custo-benefício. Tratamos nossos clientes com total respeito, atendendo-os de forma eficiente e personalizada para atender suas necessidades industriais.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/fabrica.svg" alt="Imagem Sobre a Empresa" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel com fundo customizado -->
+    <div id="productCarousel" class="carousel slide my-5" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#productCarousel" data-slide-to="1"></li>
+            <li data-target="#productCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="slider-background">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1 class="display-4 font-weight-bold">Tubeteira</h1>
+                                <p class="lead">A Máquina Tubeteira é uma solução inovadora e altamente eficiente para a produção e montagem de tubetes plásticos, amplamente utilizada em indústrias farmacêuticas, cosméticos, alimentícias e químicas. Projetada para atender às demandas de alta produtividade e precisão, esta máquina se destaca pela sua robustez e tecnologia avançada.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/tube.png" class="d-block w-100" alt="Máquina Tubeteira">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="slider-background">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1 class="display-4 font-weight-bold">Disco de corte para tubete</h1>
+                                <p class="lead">Transforme a precisão e a eficiência em seu processo de produção com a Cortadeira Rotativa WV Máquinas. Ideal para cortes em bobinas micro-onduladas, A4, PP, PET, adesivos e muito mais, esta máquina oferece uma solução versátil para atender às suas necessidades variadas.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/Disco de corte para tubete.png" class="d-block w-100" alt="Disco de Corte para Tubete">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="slider-background">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1 class="display-4 font-weight-bold">Disco de corte para tubete</h1>
+                                <p class="lead">Transforme a precisão e a eficiência em seu processo de produção com a Cortadeira Rotativa WV Máquinas. Ideal para cortes em bobinas micro-onduladas, A4, PP, PET, adesivos e muito mais, esta máquina oferece uma solução versátil para atender às suas necessidades variadas.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/Disco de corte para tubete.png" class="d-block w-100" alt="Disco de Corte para Tubete">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <!-- Seção de Conteúdo -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Título 1</h5>
+                        <p class="card-text">Descrição breve sobre o conteúdo 1.</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Título 2</h5>
+                        <p class="card-text">Descrição breve sobre o conteúdo 2.</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Título 3</h5>
+                        <p class="card-text">Descrição breve sobre o conteúdo 3.</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Minha Homepage. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

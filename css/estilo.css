@@ -1,0 +1,125 @@
+/* Estilo personalizado para a classe container com my-5 */
+.container.my-5 {
+    padding: 50px 0;
+}
+
+/* Alterar a cor de fundo do cabeçalho (navbar) */
+.navbar {
+    background-color: #ffffff !important; /* Altere para a cor desejada */
+}
+
+/* Estilo para o slider */
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute; /* Garante que o posicionamento não afete o layout do restante */
+    top: 50%; /* Alinha verticalmente no meio */
+    transform: translateY(-50%); /* Ajusta o alinhamento vertical */
+    width: 5%; /* Ajusta a largura dos botões */
+    height: 100%; /* Ajusta a altura dos botões */
+}
+
+.carousel-control-prev {
+    left: 0; /* Alinha à esquerda */
+}
+
+.carousel-control-next {
+    right: 0; /* Alinha à direita */
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #ffffff; /* Força a cor de fundo branca */
+    padding: 15px 0;
+    color: #333333; /* Força a cor do texto escuro */
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+/* Estilo para os cards */
+.card {
+    margin-bottom: 30px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Outros estilos */
+body {
+    padding-top: 70px; /* Ajuste conforme a altura da sua navbar */
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+h1, h5 {
+    font-weight: 700;
+    color: #333333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.sobre-empresa {
+    padding: 50px 0;
+    background: linear-gradient(to bottom, #ffffff, #FF8C00 70%, #ffffff); /* Gradiente do branco para laranja e volta para branco com uma parada intermediária */
+}
+
+
+
+.slider-background {
+    background: linear-gradient(to bottom, #ffffff, #FF8C00 70%, #ffffff); /* Gradiente do branco para laranja e volta para branco com uma parada intermediária */
+    padding: 50px 0;
+}
+
+.sobre-empresa {
+    zoom: 1.2;
+}
+
+.sobre-empresa h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sobre-empresa p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.sobre-empresa img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+/* Estilo personalizado para o botão Saiba Mais */
+.btn-primary {
+    background-color: #FF8C00; /* Cor de fundo personalizada */
+    border-color: #FF8C00; /* Cor da borda */
+}
+
+.btn-primary:hover {
+    background-color: #FF6700; /* Cor de fundo ao passar o mouse */
+    border-color: #FF6700; /* Cor da borda ao passar o mouse */
+}
+
+
