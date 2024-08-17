@@ -22,10 +22,14 @@
 
 .carousel-control-prev {
     left: 0; /* Alinha à esquerda */
+    filter: invert(50%); /* Ajuste o valor para controlar a cor */
+
 }
 
 .carousel-control-next {
     right: 0; /* Alinha à direita */
+    filter: invert(50%); /* Ajuste o valor para controlar a cor */
+
 }
 
 /* Estilo para o rodapé */
@@ -87,9 +91,10 @@ a:hover {
 
 
 .slider-background {
-    background: linear-gradient(to bottom, #ffffff, #FF8C00 70%, #ffffff); /* Gradiente do branco para laranja e volta para branco com uma parada intermediária */
+    background-color: #ffffff;
     padding: 50px 0;
 }
+
 
 .sobre-empresa {
     zoom: 1.2;
@@ -122,4 +127,73 @@ a:hover {
     border-color: #FF6700; /* Cor da borda ao passar o mouse */
 }
 
+/* Indicadores do slider com cores mais escuras */
+.carousel-indicators [data-bs-target] {
+    background-color: #555555; /* Cor dos indicadores inativos (mais escuro) */
+}
 
+.carousel-indicators .active {
+    background-color: #333333; /* Cor do indicador ativo (ainda mais escuro) */
+}
+
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo da página */
+    right: 20px;  /* Distância da lateral da página */
+    z-index: 1000; /* Para garantir que o ícone esteja sobre outros elementos */
+    border-radius: 50%;
+    background-color: #25D366; /* Cor do fundo do botão */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra do botão */
+  }
+  
+  .whatsapp-float img {
+    width: 50px; /* Tamanho do ícone */
+    height: 50px;
+  }
+
+  /* Estilo para a seção da equipe */
+.team {
+    padding: 50px 0;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px; /* Ajuste conforme necessário */
+    height: 150px; /* Ajuste conforme necessário */
+    object-fit: cover;
+}
+
+.team-member h3 {
+    margin-top: 15px;
+    font-size: 1.25rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #555555;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo da página */
+    right: 20px;  /* Distância da lateral da página */
+    z-index: 1000; /* Para garantir que o ícone esteja sobre outros elementos */
+    border-radius: 50%;
+    background-color: #25D366; /* Cor do fundo do botão */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra do botão */
+}
+
+.whatsapp-float img {
+    width: 50px; /* Tamanho do ícone */
+    height: 50px;
+}
+  
+  
