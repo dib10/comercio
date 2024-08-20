@@ -82,6 +82,10 @@ a:hover {
 .carousel-indicators .active {
     background-color: var(--text-dark);
 }
+.slider-background {
+    padding: 50px 0;
+}
+
 
 /* Rodapé */
 footer {
@@ -108,28 +112,66 @@ footer {
 }
 
 /* Sobre a empresa */
-.sobre-empresa {
-    padding: 50px 0;
-    background: linear-gradient(to bottom, var(--background-light), var(--primary-color) 70%, var(--background-light));
-    zoom: 1.2;
+
+/* Ajuste para a nova estrutura */
+.sobre-empresa h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #343A40; /* Use uma cor que contraste bem com o fundo */
 }
 
-.sobre-empresa h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+.text-left {
+    text-align: left;
+    margin-left: 0; /* Ajuste a margem se necessário */
 }
 
 .sobre-empresa p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #6C757D;
 }
 
-.sobre-empresa img {
-    max-width: 100%;
-    border-radius: 8px;
+.laranja {
+    color: #FF8C00; /* Laranja para destacar */
+    font-weight: 700; /* Deixe a fonte em negrito */
 }
+
+.sobre-empresa .image-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-empresa .image-content img {
+    max-width: 100%; /* Garante que a imagem se ajuste ao tamanho da coluna */
+    height: auto;
+}
+
+
+
+
+/* Adiciona o efeito de fusão com o degradê */
+.sobre-empresa::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--background-light));
+    z-index: 1;
+}
+.sobre-empresa {
+    position: relative;
+}
+
+
+
+
+
 
 /* Botões */
 .btn-primary {
@@ -194,4 +236,67 @@ footer {
 .slider-background {
     background-color: var(--background-light);
     padding: 50px 0;
+}
+
+/* Estilo para a seção "Sobre a Empresa" em dispositivos móveis */
+@media (max-width: 768px) {
+    .sobre-empresa {
+        flex-direction: column; /* Alinha os itens em coluna */
+        background: var(--background-light); /* Remove o gradiente */
+        border-radius: 0; /* Remove o arredondamento */
+    }
+
+    .sobre-empresa .image-content {
+        background: none; /* Remove o background da imagem */
+    }
+
+    .sobre-empresa::before {
+        display: none; /* Remove o efeito de fusão */
+    }
+}
+
+.full-width-section {
+    width: 100vw; /* 100% da largura da viewport */
+    margin-left: calc(-50vw + 50%); /* Ajusta a margem para compensar o container padrão */
+    margin-right: calc(-50vw + 50%); /* Ajusta a margem para compensar o container padrão */
+    padding: 0; /* Remove o padding padrão, se necessário */
+}
+
+.sobre-empresa {
+    background-color: #ffffff; /* Defina uma cor de fundo se desejar */
+}
+
+.sobre-empresa h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #343A40; /* Use uma cor que contraste bem com o fundo */
+}
+
+.text-left {
+    text-align: left;
+}
+
+.sobre-empresa p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #6C757D;
+}
+
+.laranja {
+    color: #FF8C00; /* Laranja para destacar */
+    font-weight: 700; /* Deixe a fonte em negrito */
+}
+
+.sobre-empresa .image-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-empresa .image-content img {
+    max-width: 100%; /* Garante que a imagem se ajuste ao tamanho da coluna */
+    height: auto;
 }
