@@ -188,6 +188,7 @@ footer {
 }
 .sobre-empresa {
     position: relative;
+    margin-bottom: 3rem; /* Ajuste conforme necessário para a distância entre seções */
 }
 
 /* Botões */
