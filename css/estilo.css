@@ -50,7 +50,10 @@ a:hover {
 /* Navegação */
 .navbar {
     background-color: var(--background-light) !important;
+    position: relative; /* Adicione isso se ainda não estiver presente */
+    z-index: 1000; /* Ajuste o valor se necessário */
 }
+
 
 /* Slider */
 .carousel-control-prev,
@@ -86,6 +89,20 @@ a:hover {
     padding: 50px 0;
 }
 
+.carousel-item h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem; /* Ajuste conforme necessário */
+    font-weight: 700;
+    color: #000000; /* Ajuste a cor do texto conforme o fundo */
+}
+
+.carousel-item p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem; /* Ajuste conforme necessário */
+    font-weight: 400;
+    color: #000000; /* Ajuste a cor do texto conforme o fundo */
+}
+
 
 /* Rodapé */
 footer {
@@ -99,6 +116,14 @@ footer {
 /* Cards */
 .card {
     margin-bottom: 30px;
+}
+.card_escolher {
+    /* CSS para igualar a altura dos cartões */
+    height: 100%; /* Garante que todos os cartões tenham a mesma altura */    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd; /* Mantém as bordas visíveis */
+
 }
 
 .card-title {
@@ -150,9 +175,6 @@ footer {
     height: auto;
 }
 
-
-
-
 /* Adiciona o efeito de fusão com o degradê */
 .sobre-empresa::before {
     content: '';
@@ -167,11 +189,6 @@ footer {
 .sobre-empresa {
     position: relative;
 }
-
-
-
-
-
 
 /* Botões */
 .btn-primary {
@@ -234,9 +251,11 @@ footer {
 
 /* Slider Background */
 .slider-background {
-    background-color: var(--background-light);
-    padding: 50px 0;
+    background-color:#fff1df; /* Cor de fundo */
+    padding: 40px 0; /* Adiciona um pouco de espaçamento, opcional */
 }
+
+
 
 /* Estilo para a seção "Sobre a Empresa" em dispositivos móveis */
 @media (max-width: 768px) {
@@ -299,4 +318,34 @@ footer {
 .sobre-empresa .image-content img {
     max-width: 100%; /* Garante que a imagem se ajuste ao tamanho da coluna */
     height: auto;
+}
+/* Animação de entrada */
+/* Animação de entrada */
+/* Animação de entrada */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.sobre-empresa h2, .sobre-empresa p, .sobre-empresa .btn {
+    animation: slideIn 1s ease-out;
+}
+
+/* Efeito de animação de entrada com atraso para uma linha de texto por vez */
+.sobre-empresa h2 {
+    animation-delay:1s;
+}
+
+.sobre-empresa p {
+    animation-delay: 1s;
+}
+
+.sobre-empresa .btn {
+    animation-delay: 1.0s;
 }
